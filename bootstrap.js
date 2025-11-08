@@ -10,7 +10,7 @@ function processWindows(callback) {
 function moveTabs(window) {
 	var tabsToolbar = window.document.getElementById('TabsToolbar');
 	window.document.getElementById('appcontent').prepend(tabsToolbar);
-	tabsToolbar.style['-moz-box-ordinal-group'] = 0;
+	tabsToolbar.style.setProperty('-moz-box-ordinal-group', '0', 'important');
 }
 
 function restoreTabs(window) {
