@@ -8,6 +8,7 @@ function processWindows(callback) {
 }
 
 function moveTabs(window) {
+	if(window.document.querySelector('window#main-window[chromehidden~="location"]')) return;
 	var tabsToolbar = window.document.getElementById('TabsToolbar');
 	window.document.getElementById('appcontent').prepend(tabsToolbar);
 	tabsToolbar.style.setProperty('-moz-box-ordinal-group', '0', 'important');
