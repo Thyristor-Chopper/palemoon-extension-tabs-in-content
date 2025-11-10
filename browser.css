@@ -1,0 +1,4 @@
+window#main-window[inFullscreen="true"] #TabsToolbar {
+	display: none !important;
+	visibility: collapse !important;
+}
